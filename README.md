@@ -13,6 +13,6 @@ let pulse = Light.Bulb(💡.Pulse(color: .Red, period: 0.5, cycles: 10))
 let pulseScheme = Light.Scheme([blue, pulse, wait, blue])
 let scheme = Light.Scheme([poweron, wait, pulseScheme, poweroff])
 
-let lifx = Lifx(token: "You LIFX token")
+let lifx = Lifx(token: "Your LIFX token")
 lifx.play(scheme)
 ```
